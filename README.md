@@ -26,7 +26,7 @@ Theo Llewellyn<sup>1,2,3,</sup>*, Thomas A.K. Prescott<sup>1</sup>, Pierre Le Po
 
 ## Data Records
 
-The processed sequence data and metadata are available on the public NCBI SRA under BioProject accession PRJNA1291454.  All other data files are available at Figshare https://doi.org/10.6084/m9.figshare.29646500.
+The processed sequence data and metadata are available on the public NCBI SRA under BioProject accession PRJNA991097.  All other data files are available at Figshare https://doi.org/10.6084/m9.figshare.29646500.
 
 
 All scripts (except .R scripts) were run on the Imperial College London High Performance Computer. This HPC uses the PBS queueing system, therefore core/RAM/runtimes in .sh scripts are specified in PBS format. All scripts are written for a single genome file (replacing the word ACCESSION for the name of the sequence) but can be converted into array scripts to handle multiple genomes.
