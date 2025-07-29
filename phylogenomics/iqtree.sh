@@ -5,7 +5,7 @@ module load anaconda3/personal
 source activate iqtree-env 
 
 #CHANGE TAXON $NUMBER IF 79 taxon tree or 117 taxon tree
-NUMBER=${79}
+NUMBER=79
 
 mkdir /rds/general/project/theollewellynproject/live/IQTree/IQTree_Leca${NUMBER}T_50p_tAL
 cd /rds/general/project/theollewellynproject/live/IQTree/IQTree_Leca${NUMBER}T_50p_tAL
