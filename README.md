@@ -1,5 +1,33 @@
-# *Teloschistales* Metagenomics
-Bioinformatic scripts/code for Chapter 5: Lichens have evolved suites of self-resistance mechanisms to withstand the antifungal effects of anthraquinones
+# Self-resistance allows lichens to use toxins for UV protection
+This repository contains the code associated to the paper:
+<br/>
+
+Self-resistance allows lichens to use toxins for UV protection
+<br/>
+
+**Authors**:
+
+Theo Llewellyn<sup>1,2,3,*<sup>, Thomas A.K. Prescott<sup>1<sup>, Pierre Le Pogam<sup>4<sup>, Damien Olivier-Jimenez<sup>5<sup>, Anthony Maxwell<sup>6<sup>, Rui Fang<sup>1<sup>, Valerij Talagayev<sup>7<sup>, Gerhard Wolber<sup>7<sup>, Alejandro Huereca<sup>8<sup>, François Lutzoni<sup>9<sup>, Timothy G. Barraclough<sup>2,10<sup>, Ester Gaya<sup>1<sup>
+<br/>
+
+**Affilitions**<br/>
+1. Department of Trait Diversity and Function, Royal Botanic Gardens, Kew, Richmond, TW9 3DS, UK
+2. Department of Life Sciences, Imperial College London, Silwood Park Campus, Ascot, Berkshire, SL5 7PY, UK
+3. Science and Solutions for a Changing Planet Doctoral Training Partnership, Grantham Institute, Imperial College London, South Kensington, London, SW7 2AZ, UK
+4. UMR CNRS 8076 BioCIS, Université Paris-Saclay
+5. Université de Rennes, CNRS, ISCR UMR 6226, F-35000 Rennes, France
+6. Department of Biochemistry and Metabolism, John Innes Centre, Norwich Research Park, Norwich NR4 7UH, UK
+7. Department of Pharmaceutical and Medicinal Chemistry, Institute of Pharmacy, Freie Universität Berlin, Königin-Luise-Str. 2+4, Berlin 14195, Germany
+8. Department of Biological Sciences CW405, University of Alberta, Edmonton, AB T6G 2R3, Canada
+9. Department of Biology, Duke University, Durham, NC 27708, USA
+10. Department of Biology, University of Oxford, 11a Mansfield Road, Oxford, OX1 3SZ, UK
+
+*Correspondence: t.llewellyn19@imperial.ac.uk
+
+## Data Records
+
+The processed sequence data and metadata are available on the public NCBI SRA under BioProject accession PRJNA1291454.  All other data files are available at Figshare https://doi.org/10.6084/m9.figshare.29646500.
+
 
 All scripts (except .R scripts) were run on the Imperial College London High Performance Computer. This HPC uses the PBS queueing system, therefore core/RAM/runtimes in .sh scripts are specified in PBS format. All scripts are written for a single genome file (replacing the word ACCESSION for the name of the sequence) but can be converted into array scripts to handle multiple genomes.
 
