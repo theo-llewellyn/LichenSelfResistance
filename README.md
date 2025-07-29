@@ -7,7 +7,7 @@ Self-resistance allows lichens to use toxins for UV protection
 
 **Authors**:
 
-Theo Llewellyn<sup>1,2,3,<sup>*, Thomas A.K. Prescott<sup>1<sup>, Pierre Le Pogam<sup>4<sup>, Damien Olivier-Jimenez<sup>5<sup>, Anthony Maxwell<sup>6<sup>, Rui Fang<sup>1<sup>, Valerij Talagayev<sup>7<sup>, Gerhard Wolber<sup>7<sup>, Alejandro Huereca<sup>8<sup>, François Lutzoni<sup>9<sup>, Timothy G. Barraclough<sup>2,10<sup>, Ester Gaya<sup>1<sup>
+Theo Llewellyn<sup>1,2,3,<sup>#, Thomas A.K. Prescott<sup>1<sup>, Pierre Le Pogam<sup>4<sup>, Damien Olivier-Jimenez<sup>5<sup>, Anthony Maxwell<sup>6<sup>, Rui Fang<sup>1<sup>, Valerij Talagayev<sup>7<sup>, Gerhard Wolber<sup>7<sup>, Alejandro Huereca<sup>8<sup>, François Lutzoni<sup>9<sup>, Timothy G. Barraclough<sup>2,10<sup>, Ester Gaya<sup>1<sup>
 <br/>
 
 **Affilitions**<br/>
@@ -22,7 +22,7 @@ Theo Llewellyn<sup>1,2,3,<sup>*, Thomas A.K. Prescott<sup>1<sup>, Pierre Le Poga
 9. Department of Biology, Duke University, Durham, NC 27708, USA
 10. Department of Biology, University of Oxford, 11a Mansfield Road, Oxford, OX1 3SZ, UK
 
-*Correspondence: t.llewellyn19@imperial.ac.uk
+#Correspondence: t.llewellyn19@imperial.ac.uk
 
 ## Data Records
 
