@@ -3,16 +3,19 @@
 
 module load mafft/7.271 trimal
 
-cd /rds/general/project/theollewellynproject/live/OrthoFinder/Results_Leca117T/Single_Copy_Orthologues_50percent
-mkdir /rds/general/user/tbl19/home/Leca117T_msa
+#CHANGE TAXON $NUMBER IF 79 taxon tree or 117 taxon tree
+NUMBER=79
+
+cd /rds/general/project/theollewellynproject/live/OrthoFinder/Results_Leca${NUMBER}T/Single_Copy_Orthologues_50percent
+mkdir /rds/general/user/tbl19/home/Leca${NUMBER}T_msa
 
 for i in *.fa
 do
 ORTHOGROUP=${i%%.fa}
-mafft --auto $i > /rds/general/user/tbl19/home/Leca117T_msa/${ORTHOGROUP}_msa.fa
+mafft --auto $i > /rds/general/user/tbl19/home/Leca${NUMBER}T_msa/${ORTHOGROUP}_msa.fa
 done
 
-cd /rds/general/user/tbl19/home/Leca117T_msa
+cd /rds/general/user/tbl19/home/Leca${NUMBER}T_msa
 
 for i in *.fa
 do 
