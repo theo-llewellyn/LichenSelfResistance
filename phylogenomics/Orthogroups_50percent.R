@@ -4,7 +4,10 @@ library(readr)
 library(tibble)
 library(janitor)
 
-setwd("~/The Royal Botanic Gardens, Kew/Teloschistales - Documents/0_THEO_LLEWELLYN_PHD/03_RESULTS/ORTHOFINDER/Results_Leca117T/")
+#CHANGE TAXON $NUMBER IF 79 taxon tree or 117 taxon tree
+NUMBER=79
+
+setwd("~/The Royal Botanic Gardens, Kew/Teloschistales - Documents/0_THEO_LLEWELLYN_PHD/03_RESULTS/ORTHOFINDER/Results_Leca${NUMBER}T/")
 
 #load in data
 Orthogroups <- read_tsv("Orthogroups.GeneCount.tsv")
@@ -17,4 +20,4 @@ Orthogroups %>% filter(across(ends_with(c("renamed","proteins")), ~ .x < 2), Tot
 nrow(single_copy_orthologues_50)
 
 #save orthogroup column as a text file
-write.table(single_copy_orthologues_50$Orthogroup,"Orthologues_Leca117T_50p.txt", row.names = FALSE, col.names = FALSE, quote = FALSE)
+write.table(single_copy_orthologues_50$Orthogroup,"Orthologues_Leca${NUMBER}T_50p.txt", row.names = FALSE, col.names = FALSE, quote = FALSE)
