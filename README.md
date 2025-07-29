@@ -123,7 +123,7 @@ The following steps analyse patterns of variation and trait evolution for all me
 1. `Rscript Chemistry_analysis_BGCs_01_SummaryPlots.R` produces summary plots showing the number and distribution of BGCs and metabolites
 2. `Rscript Chemistry_analysis_BGCs_02_MantelTests_abundance.R` conducts Mantel tests to see if BGC and metabolite variation correlate with phylogenetic relatedness.
 3. `Rscript Chemistry_analysis_BGCs_03_PCoA_abundance.R` Clusters and visualises BGC and metabolite similarity of samples.
-4. `Rscript Chemistry_analysis_BGCs_05_BlombergKPagelLambda.R` Estimates Blomberg's K and Pagel's lambda for BGC and metabolite richness and performs trait analysis to see whether they carry phylogenetic signal
+4. `Rscript Chemistry_analysis_BGCs_05_BlombergKPagelLambda.R ` Estimates Blomberg's K and Pagel's lambda for BGC and metabolite richness and performs trait analysis to see whether they carry phylogenetic signal.
 5. `Rscript Chemistry_analysis_BGCs_06_PurvisD.R` tests whether presence-absence patterns of each BGC and metabolite individually are consistent with species tree.
 
 ### 5.2 Anthraquinone analysis
