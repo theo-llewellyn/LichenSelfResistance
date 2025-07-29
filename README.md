@@ -69,18 +69,43 @@ Visualises the results of Blobtools and CONCOCT in order to merge bins belonging
 2. `qsub rename_downloaded_proteins.sh` renames the protein headers from assemblies downloaded from NCBI/JGI so that they are unique between proteomes
 
 ### 3.3 Orthology inference
-`cd annotation_orthology/orthology`
-1. `cp *_CONCOCT_genes_masked/predict_results/*proteins.fa formatted_proteomes_117T` copies all predicted proteomes to a new directory called `formatted_proteomes_117T`
+The following steps are done separately for the 79 taxon species tree used in metabologenomic tests and the 117 taxon species tree used in positive selection tests
+1. `cp *_CONCOCT_genes_masked/predict_results/*proteins.fa formatted_proteomes` copies all predicted proteomes to a new directory called `formatted_proteomes`
 2. `qsub orthofinder.sh` runs orthology inference using [OrthoFinder](https://github.com/davidemms/OrthoFinder)
+
+### 3.4 Biosynthetic Gene Cluster Annotation
+N.B. BGCs were only annotated for the 79 taxon dataset.
+1. `qsub antismash.sh`
 
 ## 4. Phylogenomics
 `cd phylogenomcis`
+The following steps are done separately for the 79 taxon species tree used in metabologenomic tests and the 117 taxon species tree used in positive selection tests
 1. `Rscript Orthogroups_50percent.R` uses the `Orthogroups.GeneCount.tsv` file from OrthoFinder to extract a list of single copy orthologues present in at least 50% of taxa
 2. `qsub extract_50_orthogroups.sh` pull 50% orthogroups and copy to new directory
 3. `qsub mafft_trimAL_loop.sh` uses [MAFFT](https://mafft.cbrc.jp/alignment/software/) to align each orthogroup and [TrimAl](http://trimal.cgenomics.org/) to remove ambiguous regions, script also removes trailing information on protein headers so that only the species name remains. This is needed in order for tree building tools to recognise which sequences belong to the same genome
 5. `qsub iqtree.sh` produces a concatenated maximum likelihood tree from all orthgroups alignments and also individual orthogroup 'gene trees' for each orthogroup separately using [IQ-Tree](https://github.com/iqtree/iqtree2)
 
-## 5. Selection analysis
+For the 79 taxon species tree we compared the maximum likelihood concatenated IQTree phylogeny to an ASTRAL coalescent-based phylogeny
+6. `qsub ASTRAL.sh`
+
+## 5. Statistical analyses of paired genome-metabolome data
+### 5.1 Whole genome-metabolome analysis
+The following steps analyse patterns of variation and trait evolution for all metabolites
+`cd metabologenomics/all_metabolites`
+1. `Rscript Chemistry_analysis_BGCs_01_SummaryPlots.R` produces summary plots showing the number and distribution of BGCs and metabolites
+2. `Rscript Chemistry_analysis_BGCs_02_MantelTests_abundance.R` conducts Mantel tests to see if BGC and metabolite variation correlate with phylogenetic relatedness.
+3. `Rscript Chemistry_analysis_BGCs_03_PCoA_abundance.R` Clusters and visualises BGC and metabolite similarity of samples.
+4. `Rscript Chemistry_analysis_BGCs_05_BlombergKPagelLambda.R` Estimates Blomberg's K and Pagel's lambda for BGC and metabolite richness and performs trait analysis to see whether they carry phylogenetic signal
+5. `Rscript Chemistry_analysis_BGCs_06_PurvisD.R` tests whether presence-absence patterns of each BGC and metabolite individually are consistent with species tree.
+
+### 5.2 Anthraquinone analysis
+The following steps focus specifically on anthraquinone BGCs and metabolites.
+1. `Rscript Chemistry_analysis_BGCs_07_ASR_outgroup.R` Performs ancestral state reconstruction for anthraquinone BGcs
+2. `Rscript Chemistry_analysis_BGCs_08_anthraquinone_stats_abundance.R` tests whether anthraquinone richness and abundance differs between Teloschistaceae and outgroups. Also identifies anthraquinones that are over-represented in Teloschistaceae.
+3. `Rscript hOUwie_loop_outgroup_and_anthprop_abundance.R` Performs hOUwie trait analysis testing whether anthraquinone metabolite evolution correlates with gene evolution in anthraquinone BGCs.
+
+
+## 6. Selection analysis
 `cd selection_analysis`
 The following scripts pull the genes of interest from the genomes and perform selection analysis to test to positive selection in the _Teloschistales_. The scripts are for the Hsp90 gene but are the same for all three genes
 
