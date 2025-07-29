@@ -10,7 +10,7 @@ Self-resistance allows lichens to use toxins for UV protection
 Angelina Ceballos-Escalera<sup>1,2,#</sup>, Theo Llewellyn<sup>1,2,#,</sup>*, John Richards<sup>1,2</sup>, Daegan Inward<sup>3</sup>, Alfried Vogler<sup>1,2</sup>
 <br/>
 
-Theo Llewellyn<sup>1,2,3,<sup>*, Thomas A.K. Prescott<sup>1<sup>, Pierre Le Pogam<sup>4<sup>, Damien Olivier-Jimenez<sup>5<sup>, Anthony Maxwell<sup>6<sup>, Rui Fang<sup>1<sup>, Valerij Talagayev<sup>7<sup>, Gerhard Wolber<sup>7<sup>, Alejandro Huereca<sup>8<sup>, François Lutzoni<sup>9<sup>, Timothy G. Barraclough<sup>2,10<sup>, Ester Gaya<sup>1<sup>
+Theo Llewellyn<sup>1,2,3,<sup>, Thomas A.K. Prescott<sup>1<sup>, Pierre Le Pogam<sup>4<sup>, Damien Olivier-Jimenez<sup>5<sup>, Anthony Maxwell<sup>6<sup>, Rui Fang<sup>1<sup>, Valerij Talagayev<sup>7<sup>, Gerhard Wolber<sup>7<sup>, Alejandro Huereca<sup>8<sup>, François Lutzoni<sup>9<sup>, Timothy G. Barraclough<sup>2,10<sup>, Ester Gaya<sup>1<sup>
 <br/>
 
 **Affilitions**<br/>
